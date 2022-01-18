@@ -1,0 +1,29 @@
+body {
+  background: hsl(0, 0%, 20%);
+  display: flex;
+}
+
+div {
+  background: hsl(0, 0%, 80%);
+}
+
+#drawBoard {
+  height: 640px;
+  width: 640px;
+  background: hsl(360, 59%, 43%);
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#controls {
+  background: hsl(290, 100%, 50%);
+}
+
+.pixel {
+  background: hsl(60, 100%, 50%);
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
