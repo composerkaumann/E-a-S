@@ -1,7 +1,14 @@
 body {
-  background: hsl(0, 0%, 20%);
+  background: hsl(0, 0%, 15%);
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  padding: 4px 8px;
+  text-align: center;
+  background: hsl(290, 76%, 70%);
 }
 
 #contentWrap {
@@ -9,7 +16,7 @@ body {
 }
 
 #drawBoard {
-  background: hsl(360, 59%, 43%);
+  background: hsl(360, 40%, 47%);
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -27,7 +34,7 @@ body {
 }
 
 #controls {
-  background: hsl(157, 100%, 50%);
+  background: hsl(136, 34%, 29%);
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -43,6 +50,7 @@ body {
   border: black solid 1px;
 }
 
-.input {
-  height: 48px;
+input {
+  height: 20px;
+  width: 60px;
 }
