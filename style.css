@@ -13,6 +13,7 @@ body {
   padding: 8px;
   display: flex;
   flex-direction: column;
+  align-content: stretch;
 }
 
 #row {
@@ -21,10 +22,15 @@ body {
   padding: 0px;
   background: hsl(0, 0%, 80%);
   display: flex;
+  align-items: stretch;
+  flex-grow: 1;
 }
 
 #controls {
   background: hsl(157, 100%, 50%);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pixel {
@@ -33,4 +39,10 @@ body {
   height: auto;
   margin: 0px;
   padding: 0px;
+  flex-grow: 1;
+  border: black solid 1px;
+}
+
+.input {
+  height: 48px;
 }

@@ -33,6 +33,9 @@ function sizeBoardWrap() {
   document.getElementById("drawBoard").style.height = vwprtSize * 0.8 + "px";
   if (vwprtHght > vwprtWdth) {
     document.getElementById("contentWrap").style.flexDirection = "column";
+    document.getElementById("controls").style.width = vwprtSize * 0.8 + "px";
+  } else {
+    document.getElementById("controls").style.height = vwprtSize * 0.8 + "px";
   }
 }
 
@@ -44,8 +47,8 @@ function createBoard() {
     myNode.removeChild(myNode.lastChild);
   }
   const size = Math.abs(document.getElementById("askSize").value);
-  if (size == isNaN || size > 100 || size < 10) {
-    alert("Enter numbers between 10 and 99!");
+  if (size == isNaN || size > 256 || size < 1) {
+    alert("Enter numbers between 1 and 256!");
   } else {
     for (let x = 0; x < size; x++) {
       let row = document.createElement("div");
@@ -53,7 +56,6 @@ function createBoard() {
       for (let y = 0; y < size; y++) {
         let pixel = document.createElement("div");
         pixel.className = "pixel";
-        pixel.textContent = "@.";
         row.appendChild(pixel);
       }
       document.getElementById("drawBoard").appendChild(row);
