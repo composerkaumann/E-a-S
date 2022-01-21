@@ -70,14 +70,14 @@ function createBoard() {
 createBoard();
 
 let brd = document.getElementById("drawBoard");
-brd.addEventListener("mousedown", function () {
+brd.addEventListener("pointerdown", function () {
   brd.addEventListener(
-    "mouseover",
+    "pointerover",
     function (event) {
       event.target.style.background = "orange";
-      setTimeout(function () {
+      /**setTimeout(function () {
         event.target.style.background = "";
-      }, 5000);
+      }, 15000);**/
     },
     false
   );
